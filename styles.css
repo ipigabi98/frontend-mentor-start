@@ -5,9 +5,53 @@
     font-family: 'Outfit', sans-serif;
 }
 
+img {
+    display: block;
+}
+
 body {
     padding: 0;
     margin: 0;
     height: 100vh;
     background: hsl(212, 45%, 89%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    gap: 1rem;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.img-container {
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.title-container {
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(218, 44%, 22%);
+    padding: 0 0.5rem;
+}
+
+.desc-container {
+    font-weight: 400;
+    font-size: 13px;
+    color: gray;
+    padding-bottom: 1rem;
 }
